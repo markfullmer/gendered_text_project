@@ -5,6 +5,7 @@ module:
   captcha: 0
   ckeditor: 0
   config: 0
+  contact: 0
   ctools: 0
   dblog: 0
   dynamic_page_cache: 0

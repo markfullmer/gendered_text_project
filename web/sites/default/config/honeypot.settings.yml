@@ -7,11 +7,13 @@ unprotected_forms:
 protect_all_forms: false
 log: true
 element_name: gendered-text
-time_limit: 2
+time_limit: 4
 expire: 300
 form_settings:
   user_register_form: true
-  user_pass: false
+  user_pass: true
+  contact_message_personal_form: true
+  contact_message_website_feedback_form: true
   node_page_form: false
   node_text_form: true
 _core:

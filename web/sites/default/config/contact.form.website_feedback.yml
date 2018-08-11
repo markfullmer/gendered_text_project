@@ -1,0 +1,13 @@
+uuid: 9ceb5a4c-137e-44db-b68c-fd62f447e546
+langcode: en
+status: true
+dependencies: {  }
+id: website_feedback
+label: 'Website Feedback'
+recipients:
+  - esparkhu@yahoo.com
+  - mfullmer@gmail.com
+reply: ''
+weight: 0
+message: 'Thanks for your feedback!'
+redirect: ''
