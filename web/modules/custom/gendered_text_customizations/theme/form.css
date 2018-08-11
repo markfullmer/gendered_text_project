@@ -1,0 +1,27 @@
+.layout-region-node-main, .layout-region-node-footer {
+    float: left;
+    width: 100%;
+    padding-right: 2em;
+    box-sizing: border-box;
+}
+
+.layout__region.layout__region--first-above {
+	flex:0 1 60%!important;
+}
+.layout__region.layout__region--second-above {
+	flex:0 1 30%!important;
+	padding:2em;
+}
+
+.field--name-field-persona-female, .field--name-field-persona-male, .field--name-field-persona-nonbinary, .field--name-field-persona-default {
+	display:inline;
+	float:left;
+	width:20%;
+	padding-right:1rem;
+}
+
+div.field--type-string {
+	display:inline;
+    float: left;
+    padding-right: 1rem;	
+}

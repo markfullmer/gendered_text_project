@@ -1,0 +1,5 @@
+name: Gendered Text API
+type: module
+description: Provides business logic for parsing texts
+core: 8.x
+package: Custom

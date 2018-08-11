@@ -1,0 +1,5 @@
+form:
+  version: 1.x
+  css:
+    theme:
+      theme/form.css: {}

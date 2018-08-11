@@ -1,0 +1,6 @@
+name: Gendered Text Customizations
+description: Alters & hooks for the Gendered Text Project
+package: Custom
+
+type: module
+core: 8.x

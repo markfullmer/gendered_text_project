@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Contains gendered_text_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+require_once 'gendered_text_api.map_importer.inc';
+
+/**
+ * Implements hook_help().
+ */
+function gendered_text_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gendered_text_api module.
+    case 'help.page.gendered_text_api':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides business logic for parsing texts') . '</p>';
+      return $output;
+
+    default:
+  }
+}

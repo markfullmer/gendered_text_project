@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains corpus_core.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_form_alter().
+ */
+function gendered_text_customizations_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['node_text_edit_form', 'node_text_form',
+'taxonomy_term_replacement_map_form'])) {
+    $form['#attached']['library'][] = 'gendered_text_customizations/form';
+    unset($form['meta']);
+  }
+  // If moderations state exists & has options assigned, hide Published checkbox.
+  if (isset($form['moderation_state']['widget'][0]['#options'])) {
+    $form['status']['#access'] = false;
+  }
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function gendered_text_customizations_user_login($account) {
+  \Drupal::service('request_stack')->getCurrentRequest()->query->set('destination', '/admin/workbench');
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function gendered_text_customizations_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  switch ($entity->bundle()) {
+    // Here you modify only your day content type
+    case 'text':
+      $text = $entity->get('field_body')->value;
+      $clean = Html::escape(strip_tags($text));
+      $entity->field_wordcount->setValue(['value' => str_word_count($clean)]);
+     break;
+  }
+}

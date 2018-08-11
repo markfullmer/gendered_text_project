@@ -1,0 +1,45 @@
+gendered_text_api.selector_form:
+  path: 'node/{node}/select'
+  defaults:
+    _form: '\Drupal\gendered_text_api\Form\SelectorForm'
+    _title: 'SelectorForm'
+  requirements:
+    _permission: 'access content'
+    node: \d+  
+gendered_text_api.read:
+  path: 'read/{node}'
+  defaults:
+    _controller: '\Drupal\gendered_text_api\Controller\ReadController::read'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+    node: \d+
+gendered_text_api.export:
+  path: 'export/{id}'
+  defaults:
+    _controller: '\Drupal\gendered_text_api\Controller\ExportController::export'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+    node: \d+
+gendered_text_api.replacement_map:
+  path: 'replacement-map'
+  defaults:
+    _controller: '\Drupal\gendered_text_api\Controller\ReplacementMapController::list'
+    _title: 'The Replacement Map'
+  requirements:
+    _permission: 'access content'
+gendered_text_api.prepare:
+  path: 'prepare'
+  defaults:
+    _form: '\Drupal\gendered_text_api\Form\PrepareForm'
+    _title: 'Step 1: Prepare'
+  requirements:
+    _permission: 'access content'
+gendered_text_api.test:
+  path: 'test'
+  defaults:
+    _form: '\Drupal\gendered_text_api\Form\TestForm'
+    _title: 'Step 2: Test'
+  requirements:
+    _permission: 'access content'

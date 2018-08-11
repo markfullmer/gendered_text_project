@@ -1,0 +1,4 @@
+autoselect:
+  version: 1.x
+  js:
+    theme/autoselect.js: {}
