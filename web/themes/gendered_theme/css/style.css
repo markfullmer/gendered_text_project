@@ -1,0 +1,126 @@
+/**
+ * Place your custom styles here.
+ */
+
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+    margin-top:0px;
+}
+
+.main-container {
+  padding: 0 2em 0 2em;
+}
+
+a, 
+.navbar-default a.navbar-brand, 
+.navbar-default .navbar-nav>li>a {
+  color:darkred;
+}
+
+.navbar-default .navbar-text {
+  clear:both;
+  color:black;
+  margin-top:0px;
+  font-weight:bold;
+}
+
+.btn-primary, 
+.btn-primary:hover,
+.btn-primary:focus {
+	background:darkred;
+}
+
+article a, form a {
+  text-decoration:underline;
+}
+a.btn {
+  text-decoration:none;
+}
+
+a:hover, a:focus {
+  color:red;
+}
+
+header.navbar.navbar-default {
+	background:lightgray;
+}
+
+.region.region-navigation a {
+	font-size:1.9em;
+}
+
+/** Homepage **/
+.splash {
+  border: 1px solid #9a9a9a;
+  outline: 2em solid #f2f1ee;
+  text-align:center;
+  padding-bottom:2rem;
+  margin-bottom:1em;
+  margin-top:2em;
+  width:70%;
+}
+
+.splash .section-description {
+  padding:0.5em 2em 0.5em 2em;
+  text-align:left;
+}
+.splash h3 a {
+  text-decoration:none;
+}
+.splash h4 {
+  font-size:3rem;
+  line-height:0.1rem;
+  padding-top:1em;
+}
+
+/** Header */
+#block-headerblock li, #block-headerblock ul {
+    display: inline;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: darkred;
+    border-right: 1px solid darkred;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+#block-headerblock ul {
+  float:right;
+}
+
+#block-gendered-theme-account-menu {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: darkred;
+}
+
+#block-gendered-theme-account-menu .navbar-nav>li>a {
+  padding-top:0.5em;
+}
+
+/** Footer */
+.footer {
+  color: white;
+  text-align: center;
+  min-height: 5rem;
+  border-top: 1px solid darkgray;
+  background: darkred;
+  padding-top: 2em;
+}
+
+/** Text display **/
+#block-genderselector .select-wrapper {
+  width:auto;
+}
+
+/** Mobile */
+@media screen and (max-width: 767px) {
+  .splash h4 {
+    font-size:2rem;
+    line-height:1.5rem;
+    padding-top:1em;
+  }
+}
