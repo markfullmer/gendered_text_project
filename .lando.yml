@@ -1,0 +1,4 @@
+name: gendered-text-project
+recipe: drupal8
+config:
+  webroot: web
