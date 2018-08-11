@@ -1,0 +1,29 @@
+uuid: e30ad7f0-9d0d-4fec-b86f-14582a1c86ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_genre
+    - node.type.text
+    - taxonomy.vocabulary.genre
+id: node.text.field_genre
+field_name: field_genre
+entity_type: node
+bundle: text
+label: Genre
+description: 'To add a new genre, contact the maintainers of the Gendered Text Project.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      genre: genre
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

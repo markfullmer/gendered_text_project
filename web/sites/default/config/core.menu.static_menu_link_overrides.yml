@@ -1,0 +1,39 @@
+definitions:
+  user__page:
+    weight: -49
+    menu_name: account
+    parent: ''
+    enabled: true
+    expanded: false
+  user__logout:
+    weight: -48
+    menu_name: account
+    parent: ''
+    expanded: false
+    enabled: true
+  workbench__create_content:
+    enabled: false
+    menu_name: workbench
+    parent: ''
+    expanded: false
+    weight: 0
+  workbench__my_edited:
+    enabled: false
+    menu_name: workbench
+    parent: ''
+    weight: 5
+    expanded: false
+  workbench__all_content:
+    enabled: false
+    menu_name: workbench
+    parent: ''
+    weight: 10
+    expanded: false
+  workbench__configure:
+    enabled: false
+    menu_name: workbench
+    parent: ''
+    weight: 20
+    expanded: false
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

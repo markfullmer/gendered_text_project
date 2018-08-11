@@ -1,0 +1,41 @@
+uuid: 18f294ce-1d24-40e8-9a75-58491648ab1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_avatar
+    - field.field.user.user.field_bio
+    - image.style.scale_250
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_avatar:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: scale_250
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_bio:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  member_for: true

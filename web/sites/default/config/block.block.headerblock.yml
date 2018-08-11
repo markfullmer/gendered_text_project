@@ -1,0 +1,25 @@
+uuid: e773072a-f672-4389-b57e-e5ab651039fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:b3f14644-1e66-4157-8f0f-12035f6fb199'
+  module:
+    - block_content
+  theme:
+    - gendered_theme
+id: headerblock
+theme: gendered_theme
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:b3f14644-1e66-4157-8f0f-12035f6fb199'
+settings:
+  id: 'block_content:b3f14644-1e66-4157-8f0f-12035f6fb199'
+  label: 'Header Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

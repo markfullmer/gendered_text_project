@@ -1,0 +1,9 @@
+uuid: 5c738d5d-bd55-46ca-af9c-b3b940afb85c
+langcode: en
+status: true
+dependencies: {  }
+id: replacement_item
+label: 'Replacement Item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: e81be69e-5304-49b0-bc68-007246e6f78e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wordcount
+    - node.type.text
+id: node.text.field_wordcount
+field_name: field_wordcount
+entity_type: node
+bundle: text
+label: Wordcount
+description: 'An automated wordcount is displayed in the lower right hand corner of the ''body'' field.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,19 @@
+uuid: b0ce3b5a-398b-4979-be57-2ea7c1260b1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_persona_female
+    - paragraphs.paragraphs_type.personae
+id: paragraph.personae.field_persona_female
+field_name: field_persona_female
+entity_type: paragraph
+bundle: personae
+label: Female
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

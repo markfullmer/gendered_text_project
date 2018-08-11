@@ -1,0 +1,9 @@
+uuid: 1a1a7ee3-5c2c-4c1a-8bc2-81731fa70308
+langcode: en
+status: true
+dependencies: {  }
+name: Genre
+vid: genre
+description: ''
+hierarchy: 0
+weight: 0

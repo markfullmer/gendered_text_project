@@ -1,0 +1,88 @@
+uuid: fac98417-39bb-4c2f-90c5-22d14fb7b97d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.text.field_author
+    - field.field.node.text.field_body
+    - field.field.node.text.field_genre
+    - field.field.node.text.field_personae
+    - field.field.node.text.field_wordcount
+    - field.field.node.text.field_year
+    - node.type.text
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+    - text
+    - workbench_moderation
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings: {  }
+id: node.text.default
+targetEntityType: node
+bundle: text
+mode: default
+content:
+  field_author:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: first
+  field_body:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: bottom
+  field_genre:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: first
+  field_personae:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Character
+      title_plural: Characters
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: second
+  field_year:
+    weight: 4
+    settings:
+      placeholder: '2018'
+    third_party_settings: {  }
+    type: number
+    region: first
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 1
+    region: first
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: top
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_wordcount: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

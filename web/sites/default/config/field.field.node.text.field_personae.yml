@@ -1,0 +1,34 @@
+uuid: 2f452785-bfc1-4b85-b7a0-1ec3eae79ea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personae
+    - node.type.text
+    - paragraphs.paragraphs_type.personae
+  module:
+    - entity_reference_revisions
+id: node.text.field_personae
+field_name: field_personae
+entity_type: node
+bundle: text
+label: Characters
+description: 'You can either add characters here, via this interface, or in the ''body'' field of the text itself, following the <a href="/legends" target="_blank">legend format</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      personae: personae
+    target_bundles_drag_drop:
+      personae:
+        enabled: true
+        weight: 2
+      replacement_item:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

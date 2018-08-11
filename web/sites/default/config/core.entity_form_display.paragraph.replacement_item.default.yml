@@ -1,0 +1,85 @@
+uuid: d4b4e80e-aa52-4f91-9d9e-998454eabe8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.replacement_item.field_replacement_female
+    - field.field.paragraph.replacement_item.field_replacement_female_display
+    - field.field.paragraph.replacement_item.field_replacement_male
+    - field.field.paragraph.replacement_item.field_replacement_male_display
+    - field.field.paragraph.replacement_item.field_replacement_nb_display
+    - field.field.paragraph.replacement_item.field_replacement_nonbinary
+    - field.field.paragraph.replacement_item.field_replacement_type
+    - paragraphs.paragraphs_type.replacement_item
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.replacement_item.default
+targetEntityType: paragraph
+bundle: replacement_item
+mode: default
+content:
+  field_replacement_female:
+    weight: 1
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_replacement_female_display:
+    weight: 4
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_replacement_male:
+    weight: 2
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_replacement_male_display:
+    weight: 5
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_replacement_nb_display:
+    weight: 6
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_replacement_nonbinary:
+    weight: 3
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_replacement_type:
+    weight: 0
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

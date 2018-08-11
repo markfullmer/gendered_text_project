@@ -1,0 +1,36 @@
+uuid: 832de28d-ff5b-45d0-aa7e-bc72fe02cab8
+langcode: en
+status: true
+dependencies:
+  module:
+    - gendered_text_api
+    - node
+    - system
+  theme:
+    - gendered_theme
+id: genderselector
+theme: gendered_theme
+region: content
+weight: -5
+provider: null
+plugin: selector_block
+settings:
+  id: selector_block
+  label: 'Gender Selector'
+  provider: gendered_text_api
+  label_display: '0'
+  gender_peter: Male
+  submit: null
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      text: text
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/read/*'
+    negate: true
+    context_mapping: {  }

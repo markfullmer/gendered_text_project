@@ -1,0 +1,67 @@
+uuid: 111aafc8-9ff6-40c0-8136-51d3db446b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Format
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Outdent
+            - Indent
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyBlock
+            - JustifyRight
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    wordcount:
+      enable: 0
+      show_paragraphs: 0
+      show_word_count: 0
+      show_char_count: 0
+      count_spaces: 0
+      count_html: 0
+      max_words: '-1'
+      max_chars: '-1'
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: '2 MB'
+  max_dimensions:
+    width: null
+    height: null

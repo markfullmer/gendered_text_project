@@ -1,0 +1,22 @@
+uuid: eb0df069-e2dd-48ac-b642-ed1ad21177da
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gendered_theme
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: gendered_theme_local_tasks
+theme: gendered_theme
+region: header
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

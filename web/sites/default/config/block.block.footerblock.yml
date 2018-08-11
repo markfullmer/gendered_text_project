@@ -1,0 +1,25 @@
+uuid: c7e5b7ba-9a49-4732-bf40-13322fda69d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:1870913f-ce46-4179-a6ba-e4b0cf35cbbf'
+  module:
+    - block_content
+  theme:
+    - gendered_theme
+id: footerblock
+theme: gendered_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:1870913f-ce46-4179-a6ba-e4b0cf35cbbf'
+settings:
+  id: 'block_content:1870913f-ce46-4179-a6ba-e4b0cf35cbbf'
+  label: 'Footer Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

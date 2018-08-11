@@ -1,0 +1,27 @@
+uuid: 61a5aa58-bea8-48e9-8e83-651cf4a74518
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gendered_theme
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: gendered_theme_page_title
+theme: gendered_theme
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: 2c258bf2-4922-42f1-be06-dace454198cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: text_path_pattern
+label: 'Text Path Pattern'
+type: 'canonical_entities:node'
+pattern: '[node:field_genre:entity:name]/[node:title]'
+selection_criteria:
+  d5327859-261b-4258-a291-218d720cb5fc:
+    id: node_type
+    bundles:
+      text: text
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d5327859-261b-4258-a291-218d720cb5fc
+selection_logic: and
+weight: -5
+relationships: {  }

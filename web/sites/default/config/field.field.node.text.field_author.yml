@@ -1,0 +1,29 @@
+uuid: 2aa60858-b688-4046-9a5c-7b59e84b97c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.text
+    - taxonomy.vocabulary.authors
+id: node.text.field_author
+field_name: field_author
+entity_type: node
+bundle: text
+label: Author
+description: '<b>Author not in the list? Add him/her/hir on the <a href="/admin/structure/taxonomy/manage/authors/overview" target="_blank">authors listing page</a></b>.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      authors: authors
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

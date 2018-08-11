@@ -1,0 +1,15 @@
+uuid: 47ed11c5-d6cd-4216-9493-e84122d9c717
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access user profiles'
+  - 'cancel account'
+  - 'change own username'

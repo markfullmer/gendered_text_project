@@ -1,0 +1,23 @@
+uuid: f8498a8b-f2c2-4899-b980-bff11d6a2217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_persona_default
+    - paragraphs.paragraphs_type.personae
+  module:
+    - options
+id: paragraph.personae.field_persona_default
+field_name: field_persona_default
+entity_type: paragraph
+bundle: personae
+label: 'Default Gender'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: female
+default_value_callback: ''
+settings: {  }
+field_type: list_string

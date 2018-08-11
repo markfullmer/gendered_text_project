@@ -1,0 +1,34 @@
+uuid: 12c218ff-eef3-438c-a182-93eb3d7be920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_replacement_item
+    - paragraphs.paragraphs_type.replacement_item
+    - taxonomy.vocabulary.replacement_map
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.replacement_map.field_replacement_item
+field_name: field_replacement_item
+entity_type: taxonomy_term
+bundle: replacement_map
+label: Replacement
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      replacement_item: replacement_item
+    target_bundles_drag_drop:
+      personae:
+        weight: 3
+        enabled: false
+      replacement_item:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

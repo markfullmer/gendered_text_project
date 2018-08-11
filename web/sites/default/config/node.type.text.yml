@@ -1,0 +1,27 @@
+uuid: 5921842b-7dd0-45f1-9e02-1b2c32fde05a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_moderation
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - published
+      - archived
+      - draft
+      - needs_review
+    default_moderation_state: draft
+name: Text
+type: text
+description: 'Add texts, along with authoring information and a legend, for dynamically manipulating the gender of a literary work.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

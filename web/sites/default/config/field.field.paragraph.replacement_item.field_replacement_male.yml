@@ -1,0 +1,19 @@
+uuid: e3cf91b6-fe7f-40ea-9dee-cf72d38fe5bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_replacement_male
+    - paragraphs.paragraphs_type.replacement_item
+id: paragraph.replacement_item.field_replacement_male
+field_name: field_replacement_male
+entity_type: paragraph
+bundle: replacement_item
+label: 'Male Key'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: b86c8984-5d45-4d2a-87e2-dd11092bbba5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.replacement_map.field_replacement_item
+    - taxonomy.vocabulary.replacement_map
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.replacement_map.default
+targetEntityType: taxonomy_term
+bundle: replacement_map
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_replacement_item:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

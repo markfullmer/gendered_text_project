@@ -1,0 +1,9 @@
+uuid: 13ce4b6d-ecd4-42aa-8712-98771cc07362
+langcode: en
+status: true
+dependencies: {  }
+id: personae
+label: Character
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

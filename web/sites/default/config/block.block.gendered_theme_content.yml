@@ -1,0 +1,22 @@
+uuid: 92391a64-99ae-458f-9565-433f23740bdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gendered_theme
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: gendered_theme_content
+theme: gendered_theme
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,43 @@
+uuid: fd729abe-1136-4678-9bee-771e2e7253dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.replacement_map.field_replacement_item
+    - taxonomy.vocabulary.replacement_map
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.replacement_map.default
+targetEntityType: taxonomy_term
+bundle: replacement_map
+mode: default
+content:
+  field_replacement_item:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

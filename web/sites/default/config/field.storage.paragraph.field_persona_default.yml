@@ -1,0 +1,30 @@
+uuid: 8b11e5b4-4594-4ce4-b68f-306f3fe605db
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_persona_default
+field_name: field_persona_default
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: female
+      label: Female
+    -
+      value: male
+      label: Male
+    -
+      value: nonbinary
+      label: Non-Binary
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

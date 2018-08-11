@@ -1,0 +1,19 @@
+uuid: 8b775f19-cc93-480b-809b-e481c661cac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_persona_male
+    - paragraphs.paragraphs_type.personae
+id: paragraph.personae.field_persona_male
+field_name: field_persona_male
+entity_type: paragraph
+bundle: personae
+label: Male
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

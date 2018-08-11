@@ -1,0 +1,18 @@
+uuid: 6dcc9044-6efa-45e7-8350-2b55dea07d00
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Page
+type: page
+description: 'Site managers can add pages to the site that includes arbitrary text & images.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

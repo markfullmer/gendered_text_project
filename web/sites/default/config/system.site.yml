@@ -1,0 +1,15 @@
+uuid: d3ee74f5-245d-4f61-a860-6b02c28f0fd1
+name: 'Gendered Text Project'
+mail: mfullmer@gmail.com
+slogan: 'Keep the plot. Keep the prose. Change the pronouns.'
+page:
+  403: /node/24
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: mfullmer@gmail.com

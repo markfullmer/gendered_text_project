@@ -1,0 +1,28 @@
+uuid: 813ae41f-ea99-47dc-af48-8e4ce6c4aa95
+langcode: en
+status: true
+dependencies: {  }
+id: contributor
+label: Contributor
+weight: 3
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'access workbench'
+  - 'add terms in authors'
+  - 'cancel account'
+  - 'create text content'
+  - 'delete own text content'
+  - 'edit own text content'
+  - 'revert text revisions'
+  - 'use draft_draft transition'
+  - 'use draft_needs_review transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_needs_review transition'
+  - 'use published_draft transition'
+  - 'use text format basic_html'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view moderation states'
+  - 'view own unpublished content'
+  - 'view text revisions'

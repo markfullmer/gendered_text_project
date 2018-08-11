@@ -1,0 +1,56 @@
+uuid: b78eb80c-78b3-47bb-876f-8fc3ae51ac8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.personae.field_persona_default
+    - field.field.paragraph.personae.field_persona_female
+    - field.field.paragraph.personae.field_persona_male
+    - field.field.paragraph.personae.field_persona_nonbinary
+    - paragraphs.paragraphs_type.personae
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.personae.default
+targetEntityType: paragraph
+bundle: personae
+mode: default
+content:
+  field_persona_default:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_persona_female:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_persona_male:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_persona_nonbinary:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
