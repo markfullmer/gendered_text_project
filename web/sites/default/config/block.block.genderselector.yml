@@ -31,6 +31,6 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: '/read/*'
+    pages: "/read/*\r\n/node/add/text"
     negate: true
     context_mapping: {  }
