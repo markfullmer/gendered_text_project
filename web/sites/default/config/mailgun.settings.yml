@@ -1,0 +1,13 @@
+api_key: key-b6a2bc3e818a7fb26e73cb7287b42dab
+working_domain: genderedtextproject.com
+debug_mode: false
+test_mode: false
+tracking_opens: ''
+tracking_clicks: ''
+tracking_exception: ''
+format_filter: ''
+use_queue: false
+use_theme: false
+tagging_mailkey: false
+_core:
+  default_config_hash: bMOl3jD7ZuzZMuaUYzyqadr56G486ldo28NYIkK_54g

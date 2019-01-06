@@ -79,6 +79,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   created: true
   field_wordcount: true

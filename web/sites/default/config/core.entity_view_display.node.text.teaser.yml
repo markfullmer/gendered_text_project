@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.text.field_author
     - field.field.node.text.field_body
+    - field.field.node.text.field_genre
     - field.field.node.text.field_personae
+    - field.field.node.text.field_wordcount
+    - field.field.node.text.field_year
     - node.type.text
   module:
     - field_layout
@@ -23,9 +27,17 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   field_author: true
   field_body: true
   field_genre: true
   field_personae: true
+  field_wordcount: true
   field_year: true

@@ -8,7 +8,9 @@ dependencies:
   module:
     - field_layout
     - layout_discovery
+    - path
     - text
+    - workbench_moderation
 third_party_settings:
   field_layout:
     id: layout_onecol
@@ -30,6 +32,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -71,4 +79,9 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

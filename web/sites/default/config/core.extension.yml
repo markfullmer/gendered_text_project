@@ -18,10 +18,13 @@ module:
   filter: 0
   gendered_text_api: 0
   gendered_text_customizations: 0
+  google_analytics: 0
   honeypot: 0
   image: 0
   layout_discovery: 0
   link: 0
+  mailgun: 0
+  mailsystem: 0
   menu_ui: 0
   nocurrent_pass: 0
   node: 0
@@ -29,8 +32,8 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  redirect: 0
   registration_role: 0
-  smtp: 0
   system: 0
   taxonomy: 0
   taxonomy_access_fix: 0

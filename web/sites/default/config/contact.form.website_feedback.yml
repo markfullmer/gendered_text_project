@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: website_feedback
-label: 'Website Feedback'
+label: 'Feedback : Gendered Text Project'
 recipients:
   - esparkhu@yahoo.com
   - mfullmer@gmail.com
