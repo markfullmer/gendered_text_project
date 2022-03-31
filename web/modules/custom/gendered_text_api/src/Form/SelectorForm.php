@@ -61,8 +61,8 @@ class SelectorForm extends FormBase {
         '#value' => $nid,
       ];
       $form['#attached']['library'][] = 'gendered_text_api/autoselect';
-      $form['all']['#markup'] = 
-        '<p><span class="btn btn-default" id="female">All Female</span> <span class="btn btn-default" id="male">All Male</span> <span class="btn btn-default" id="randomize">Randomize</span></p>';
+      $form['all']['#markup'] =
+      '<p><span class="btn btn-default" id="female">All Female</span> <span class="btn btn-default" id="male">All Male</span> <span class="btn btn-default" id="nonbinary">All Non-binary</span> <span class="btn btn-default" id="randomize">Randomize</span></p>';
       $personae = $node->field_personae->getValue();
       if (empty($personae)) {
         $legend_string = GenderedText::findLegend($node->field_body->getValue()[0]['value']);

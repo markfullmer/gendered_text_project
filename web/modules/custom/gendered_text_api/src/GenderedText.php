@@ -83,6 +83,12 @@ class GenderedText {
         $text = preg_replace("|{{\s*" . preg_quote($placeholder[0]) . "\s*}}|", $replacement, $text);
       }
     }
+    $re = '/they was/m';
+    $subst = 'they were';
+    $text = preg_replace($re, $subst, $text);
+    $re = '/They was/m';
+    $subst = 'They were';
+    $text = preg_replace($re, $subst, $text);
     return $text;
   }
 

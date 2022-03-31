@@ -19,6 +19,10 @@
         female();
       });
 
+      $('#nonbinary').click(function () {
+        nonbinary();
+      });
+
       $('#randomize').click(function() {
         randomize();
       });
@@ -46,6 +50,15 @@
         for(var i=0; i<selects.length; i++){
           var items = selects[i].getElementsByTagName('option');
           var index = 1;
+          selects[i].selectedIndex = index;
+        }
+      }
+
+      function nonbinary() {
+        var selects = document.getElementsByTagName('select');
+        for (var i = 0; i < selects.length; i++) {
+          var items = selects[i].getElementsByTagName('option');
+          var index = 2;
           selects[i].selectedIndex = index;
         }
       }

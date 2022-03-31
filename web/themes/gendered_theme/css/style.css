@@ -110,6 +110,9 @@ header.navbar.navbar-default {
   background: darkred;
   padding-top: 2em;
 }
+.footer a {
+  color: #fff;
+}
 
 /** Text display **/
 #block-genderselector .select-wrapper {
